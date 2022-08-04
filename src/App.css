@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+  background-color: rgba(245, 209, 235, 0.355);
+  font-family: 'Roboto', sans-serif;
+}
+.App {
+  text-align: center;
+}
+.header-1{
+  font-size: 100px;
+  margin: 0;
+  color: rgba(201, 161, 190, 0.738)
+}
+.todoInput{
+  border: none;
+  height: 70px;
+  width: 500px;
+  padding: 0 0 0 20px;
+  outline: none;
+  font-size: 30px;
+  border-bottom: 0.5px solid rgb(215, 213, 213);
+  box-shadow: -4px -5px 17px 1px rgba(178, 169, 169, 0.489);
+}
+::placeholder{
+  color: rgb(215, 213, 213);
+  font-style: italic;
+  font-size: 25px;
+}
+.task-div{
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  padding: 0 10px;
+  background-color: white;
+  height: 70px;
+  border-bottom: 0.5px solid rgb(215, 213, 213);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 20px 3px rgb(178 169 169 / 49%);}
+#task{
+  position: absolute;
+  left: 1rem;
+  border-radius: 50%;
+}
+.label-incomplete{
+  font-size: 30px;
+  font-weight: lighter;
+  color: rgb(66, 65, 65);
+}
+.label-complete{
+  font-size: 30px;
+  font-weight: 50;
+  color: rgba(66, 65, 65, 0.527);
+  text-decoration: line-through;
+  font-style: italic;
+}
+.close{
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  background-color: white;
+  color: red;
+  border: none;
+  outline: none;
+}
+.Footer{
+  position: relative;
+  height: 35px;
+  background-color: white;
+  width: 520px;
+  box-shadow: 0px -1px 20px 5px rgb(178 169 169 / 49%);
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.footer-btn{
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+}
+.footer-btn:focus{
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+.Footer p{
+  position: absolute;
+  left: 0.5rem;
+  top: 0.25rem;
+  font-size: small;
+}
+.clear-completed{
+  position: absolute;
+  right: 0.5rem;
+  font-size: smaller;
+  top: 0.8rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  color: black;
+  text-decoration: none;
+}
+.clear-completed:hover{
+  text-decoration: underline;
+}
